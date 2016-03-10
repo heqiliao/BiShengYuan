@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/main_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title">
+
+        <fragment
+            android:name="com.example.newbishengyuan.activity.BarFragment1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/bar1"/>
+    </FrameLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+    <include
+        layout="@layout/cross_line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        >
+
+        <ListView
+            android:id="@+id/shopList"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"></ListView>
+
+        <in.srain.cube.views.ptr.PtrClassicFrameLayout
+            xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/inprogress_ptr"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/main_action_bar"
+
+            cube_ptr:ptr_duration_to_close="300"
+            cube_ptr:ptr_duration_to_close_header="2000"
+            cube_ptr:ptr_keep_header_when_refresh="true"
+            cube_ptr:ptr_pull_to_fresh="false"
+            cube_ptr:ptr_ratio_of_header_height_to_refresh="1.2"
+            cube_ptr:ptr_resistance="1.7">
+            <ListView
+                android:id="@+id/goodList"
+               android:layout_width="match_parent"
+                android:layout_height="match_parent"></ListView>
+
+        </in.srain.cube.views.ptr.PtrClassicFrameLayout>
+
+
+
+
+
+        <!--<fragment-->
+            <!--android:id="@+id/goodFragment"-->
+            <!--android:name="com.example.newbishengyuan.test.GoodFragment"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_weight="2"-->
+            <!--android:layout_height="match_parent"/>-->
+
+        <!--<ScrollView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:padding="@dimen/spacing">-->
+                <!--<TextView-->
+                    <!--android:id="@+id/name"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentLeft="true"-->
+                    <!--android:layout_alignParentTop="true"-->
+                    <!--android:text="心型意大利面（100g）" />-->
+                <!--<ImageView-->
+                    <!--android:id="@+id/image"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_below="@+id/name"-->
+                    <!--android:src="@mipmap/yidalimian"-->
+                    <!--android:layout_margin="@dimen/spacing" />-->
+                <!--<TextView-->
+                    <!--android:id="@+id/price"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:textSize="@dimen/titleText"-->
+                    <!--android:textColor="@color/yellowText"/>-->
+            <!--</RelativeLayout>-->
+
+
+        <!--</ScrollView>-->
+    </LinearLayout>
+
+ <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+     <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/jiesuanbackground">
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:id="@+id/shuliang"
+             android:layout_above="@+id/cart"
+             android:layout_alignLeft="@+id/cart"
+             android:textColor="@color/buttonColor"
+             android:textSize="@dimen/text"
+             android:background="@mipmap/red"
+             android:padding="@dimen/spacing"
+             android:visibility="invisible" />
+        <ImageView
+            android:id="@+id/cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/cart"
+            android:layout_marginLeft="27dp"
+            android:layout_marginStart="27dp"
+            android:layout_alignTop="@+id/jiesuan"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+         <TextView
+             android:id="@+id/id1"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="40dp"
+             android:text="￥"
+             android:textSize="@dimen/shiba"
+             android:textColor="@color/titleColor"
+             android:layout_marginStart="40dp"
+             android:layout_above="@+id/id2"
+             android:layout_toRightOf="@+id/cart"
+             android:layout_toEndOf="@+id/cart" />
+
+        <TextView
+            android:id="@+id/xianjia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="0"
+            android:textSize="@dimen/shiba"
+            android:textColor="@color/titleColor"
+            android:layout_toRightOf="@+id/id1"
+            android:layout_alignBaseline="@+id/id1" />
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="￥"
+             android:id="@+id/id2"
+             android:textColor="@color/titleColor"
+             android:layout_alignBottom="@+id/jiesuan"
+             android:layout_alignLeft="@+id/id1"
+             android:layout_alignStart="@+id/xianjia" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:id="@+id/yuanjia"
+            android:textColor="@color/titleColor"
+            android:layout_toRightOf="@+id/id2"
+            android:layout_alignBaseline="@+id/id2" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@mipmap/qujiesuan"
+            android:layout_alignParentRight="true"
+            android:id="@+id/jiesuan"
+            android:text="请选购"
+            android:textColor="@color/buttonColor"
+            android:layout_marginTop="30dp"
+            android:layout_alignParentBottom="false" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/main_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title"
+        android:background="@color/backColor"
+        >
+
+        <com.example.newbishengyuan.util.BackLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></com.example.newbishengyuan.util.BackLayout>
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textColor="@color/titleColor"
+            android:textSize="@dimen/titleText"
+            android:text="账号安全"
+            android:layout_gravity="center"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentTop="false"
+            android:layout_centerInParent="true" />
+
+
+
+    </RelativeLayout>
+
+    <include layout="@layout/cross_line_dark"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title"
+        android:id="@+id/shoujirenzheng"
+        android:background="@color/buttonColor">
+        <ImageView
+            android:id="@+id/shouji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/shoujirenzheng"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手机认证"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_toRightOf="@+id/shouji"
+            android:textSize="@dimen/shiba" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/into"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/activity_horizontal_margin" />
+    </RelativeLayout>
+    <include layout="@layout/cross_line_dark"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title"
+        android:id="@+id/shimingrenzheng"
+        android:background="@color/buttonColor">
+        <ImageView
+            android:id="@+id/shiming"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/shimingrenzheng"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="实名认证"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_toRightOf="@+id/shiming"
+            android:textSize="@dimen/shiba" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/into"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/activity_horizontal_margin" />
+    </RelativeLayout>
+    <include layout="@layout/cross_line_dark"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title"
+        android:id="@+id/denglumima"
+        android:background="@color/buttonColor">
+        <ImageView
+            android:id="@+id/denglu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/lock"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="登录密码"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_toRightOf="@+id/denglu"
+            android:textSize="@dimen/shiba" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/into"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/activity_horizontal_margin" />
+    </RelativeLayout>
+    <include layout="@layout/cross_line_dark"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title"
+        android:id="@+id/zhifumima"
+        android:background="@color/buttonColor">
+        <ImageView
+            android:id="@+id/zhifu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/zhifumima"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="支付密码"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_toRightOf="@+id/zhifu"
+            android:textSize="@dimen/shiba" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/into"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/activity_horizontal_margin" />
+    </RelativeLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/main_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title"
+        android:background="@color/backColor"
+        >
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textColor="@color/titleColor"
+            android:textSize="@dimen/titleText"
+            android:text="@string/bishengyuan"
+            android:layout_gravity="center"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentTop="false"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/main_action_bar"
+        android:layout_above="@+id/bottomBar">
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+       >
+
+         <!--android:layout_width="0dp"-->
+         <!--android:layout_height="match_parent"-->
+         <!--android:layout_weight="1">-->
+         <!--<ImageView-->
+             <!--android:layout_width="wrap_content"-->
+             <!--android:layout_height="wrap_content"-->
+             <!--android:layout_alignParentTop="true"-->
+             <!--android:src="@mipmap/homepage"/>-->
+         <!--<TextView-->
+             <!--android:layout_width="w"-->
+             <!--android:layout_height="" />-->
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/shouye"
+           android:drawableTop="@drawable/shouyepress"
+            android:background="@null"
+
+        />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/licai"
+            android:drawableTop="@drawable/licaipress"
+            android:background="@null"
+            />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/shangcheng"
+            android:drawableTop="@drawable/shangchengpress"
+            android:background="@null"
+            />
+
+             <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/faxian"
+            android:drawableTop="@drawable/faxianpress"
+                 android:background="@null"
+            />
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/wode"
+            android:drawableTop="@drawable/wodepress"
+            android:background="@null"
+            />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

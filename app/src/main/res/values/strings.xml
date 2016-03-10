@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">币升园</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="bishengyuan">币生园</string>
+    <string name="licaizhongxin">理财中心</string>
+    <string name="bishengtong">币升通</string>
+    <string name="zhuxuebao">助学宝</string>
+    <string name="xuefeibao">学费宝</string>
+    <string name="juyuancang">聚缘仓</string>
+    <string name="shouye">首页</string>
+    <string name="zhongbangshangcheng">众帮商城</string>
+    <string name="benjin">本金</string>
+    <string name="yuqijianmianjine">预期减免金额</string>
+    <string name="yuqiyueshourujine">预期月收入金额</string>
+    <string name="nianhuashouyili">年化收益率</string>
+    <string name="chanpinqixian">产品期限</string>
+    <string name="shouyifangshi">收益方式</string>
+    <string name="jixugoumai">继续购买</string>
+    <string name="lijigoumai">立即购买</string>
+    <string name="qixiri">起息日</string>
+    <string name="shangcheng">商城</string>
+    <string name="licai">理财</string>
+    <string name="wode">我的</string>
+    <string name="forgetPassword">忘记密码</string>
+    <string name="zhucetishi">6-24个字符，英文、数字组成，区分大小写</string>
+    <string name="login">用户登录</string>
+    <string name="register">注册</string>
+    <string name="faxian">发现</string>
+    <string name="wodelicai">我的理财</string>
+    <string name="wodedingdan">我的订单</string>
+    <string name="wuqian">5000元起投</string>
+    <string name="lijitouzi">立即投资</string>
+</resources>

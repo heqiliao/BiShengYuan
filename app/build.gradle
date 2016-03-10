@@ -1,0 +1,34 @@
+
+
+
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        applicationId "com.example.newbishengyuan"
+        minSdkVersion 17
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:22.2.0'
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.4'
+    compile files('libs/gson-2.3.1.jar')
+    compile files('G:/AndroidStudioProjects/NewBiShengYuan/libs/butterknife-7.0.1.jar')
+    compile 'in.srain.cube:ultra-ptr:1.0.10'
+    compile 'de.greenrobot:eventbus:2.4.0'
+
+}

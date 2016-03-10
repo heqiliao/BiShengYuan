@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/buttonColor">
+    <RelativeLayout
+        android:id="@+id/main_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title"
+        android:background="@color/backColor"
+        >
+
+        <com.example.newbishengyuan.util.BackLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></com.example.newbishengyuan.util.BackLayout>
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textColor="@color/titleColor"
+            android:textSize="@dimen/titleText"
+            android:text="资讯详情"
+            android:layout_gravity="center"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentTop="false"
+            android:layout_centerInParent="true" />
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/badp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="标题：" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/shiba"
+            android:layout_centerInParent="true"
+            android:id="@+id/title1" />
+    </RelativeLayout>
+
+    <include
+        layout="@layout/cross_line_dark"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/badp">
+
+        <TextView
+            android:id="@+id/admin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/date"
+            android:layout_marginRight="@dimen/activity_horizontal_margin" />
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <include
+        layout="@layout/cross_line_dark"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/photo"
+        android:layout_margin="@dimen/activity_horizontal_margin" />
+
+    <include
+        layout="@layout/cross_line_dark"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:id="@+id/content" />
+
+</LinearLayout>

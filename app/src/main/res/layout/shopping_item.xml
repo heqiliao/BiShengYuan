@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="12dp">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/image"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/name"
+        android:textColor="@color/titleColor"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin" />
+
+    <!--<Button-->
+     <!--android:layout_width="150dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:drawableLeft="@mipmap/shenghuoyongpin"-->
+        <!--android:text="生活用品"-->
+        <!--android:background="@null"-->
+        <!--android:padding="@dimen/activity_horizontal_margin"-->
+       <!--android:textSize="@dimen/text1"/>-->
+
+</LinearLayout>

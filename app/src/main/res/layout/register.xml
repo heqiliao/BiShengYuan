@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/buttonColor">
+       <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title"
+        android:background="@color/backColor"
+        >
+
+
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textColor="@color/titleColor"
+            android:textSize="@dimen/titleText"
+            android:text="用户登录"
+            android:layout_gravity="center"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentTop="false"
+            android:layout_centerInParent="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="注册"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/titleText"
+            android:layout_margin="@dimen/spacing"
+            android:textColor="@color/titleColor"
+             />
+
+    </RelativeLayout>
+    <RelativeLayout
+    android:id="@+id/main_action_bar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/title"
+    android:background="@color/backColor"
+    >
+
+
+        <com.example.newbishengyuan.util.BackLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></com.example.newbishengyuan.util.BackLayout>
+
+
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textColor="@color/titleColor"
+        android:textSize="@dimen/titleText"
+        android:text="注册"
+        android:layout_gravity="center"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="false"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/chongxinhuoqu"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/regist_username_status">
+
+
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/title"
+            android:id="@+id/yanzhengma"
+            android:background="@drawable/input_background"
+            android:hint="请输入验证码"
+            android:gravity="center"
+            android:textSize="@dimen/text1" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/title"
+            android:layout_toRightOf="@+id/yanzhengma"
+            android:layout_alignTop="@+id/yanzhengma"
+            android:layout_alignBottom="@+id/yanzhengma"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:text="重新获取验证码"
+            android:id="@+id/yanzhengmaButton"
+            android:background="@color/yanzhengma" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/zhucetishi"
+        android:id="@+id/regist_username_status"
+        android:layout_below="@+id/user_name_layout"
+        android:layout_marginLeft="30dp"
+        android:textSize="10sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/zhucetishi"
+        android:id="@+id/regist_password_status"
+        android:layout_below="@+id/password_layout"
+        android:layout_marginLeft="30dp"
+        android:textIsSelectable="false"
+        android:textSize="10sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/zhucetishi"
+        android:id="@+id/regist_confirm_password_status"
+        android:layout_below="@+id/password_confirm_layout"
+        android:layout_marginLeft="30dp"
+        android:textIsSelectable="false"
+        android:textSize="10sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/user_name_layout"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/main_action_bar">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title"
+            android:id="@+id/phoneNum"
+            android:background="@drawable/input_background"
+            android:paddingLeft="40dp"
+            android:hint="请输入手机号"
+            android:textSize="@dimen/text1" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/imageView29"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/regist_user"
+            android:layout_marginLeft="8dp" />
+    </RelativeLayout>
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/regist_phone_layout"-->
+        <!--android:paddingLeft="@dimen/activity_horizontal_margin"-->
+        <!--android:paddingRight="@dimen/activity_horizontal_margin"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:layout_below="@+id/user_name_layout" >-->
+
+        <!--<EditText-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/title"-->
+            <!--android:id="@+id/regist_phone_num_et"-->
+            <!--android:background="@drawable/input_background"-->
+            <!--android:paddingLeft="40dp"-->
+            <!--android:hint="请输入手机号" />-->
+
+        <!--<ImageView-->
+            <!--android:layout_width="20dp"-->
+            <!--android:layout_height="20dp"-->
+            <!--android:id="@+id/imageView16"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:src="@drawable/tel_num"-->
+            <!--android:layout_marginLeft="8dp" />-->
+    <!--</RelativeLayout>-->
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/id_num_layout"-->
+        <!--android:paddingLeft="@dimen/activity_horizontal_margin"-->
+        <!--android:paddingRight="@dimen/activity_horizontal_margin"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:layout_below="@+id/regist_phone_layout" >-->
+
+        <!--<EditText-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/title"-->
+            <!--android:id="@+id/id_num_et"-->
+            <!--android:background="@drawable/input_background"-->
+            <!--android:paddingLeft="40dp"-->
+            <!--android:hint="请输入身份证号" />-->
+
+        <!--<ImageView-->
+            <!--android:layout_width="20dp"-->
+            <!--android:layout_height="20dp"-->
+            <!--android:id="@+id/imageView31"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:src="@drawable/id_num"-->
+            <!--android:layout_marginLeft="8dp" />-->
+    <!--</RelativeLayout>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/password_layout"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/chongxinhuoqu" >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title"
+            android:id="@+id/password"
+            android:background="@drawable/input_background"
+            android:paddingLeft="40dp"
+            android:hint="请输入密码"
+            android:textSize="@dimen/text1" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/imageView32"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/unlock_lock"
+            android:layout_marginLeft="8dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/password_confirm_layout"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/password_layout" >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title"
+            android:id="@+id/password_confirm"
+            android:background="@drawable/input_background"
+            android:paddingLeft="40dp"
+            android:hint="请再次输入密码"
+            android:textSize="@dimen/text1" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/imageView33"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/unlock_lock"
+            android:layout_marginLeft="8dp" />
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="注册"
+        android:id="@+id/register"
+        android:layout_marginTop="39dp"
+        android:background="@drawable/btn_background"
+        android:layout_below="@+id/regist_confirm_password_status"
+        android:layout_alignLeft="@+id/regist_confirm_password_status"
+        android:layout_alignStart="@+id/regist_confirm_password_status"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentEnd="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="@dimen/ershidp" />
+
+</RelativeLayout>

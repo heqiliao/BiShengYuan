@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/main_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title"
+        android:background="@color/backColor"
+        >
+
+        <com.example.newbishengyuan.util.BackLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></com.example.newbishengyuan.util.BackLayout>
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textColor="@color/titleColor"
+            android:textSize="@dimen/titleText"
+            android:text="约吧"
+            android:layout_gravity="center"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentTop="false"
+            android:layout_centerInParent="true" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/edit"
+            android:layout_centerVertical="true"
+            android:id="@+id/edit"
+            android:padding="@dimen/shidp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_vertical_margin">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/photo"
+            android:src="@mipmap/photo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/shidp"
+            android:layout_toRightOf="@+id/photo"
+            android:text="用户名"
+            android:textSize="@dimen/text"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentRight="false"
+            android:id="@+id/id1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2015-07-27"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true" />
+
+        <TextView
+            android:id="@+id/id2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="如果您的计算机或网络受到防火墙或者代理服务器的保护，请确认 Firefox 已被授权访问网络"
+            android:layout_below="@+id/id1"
+            android:layout_alignLeft="@+id/id1" />
+
+        <ImageView
+            android:id="@+id/id3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/xiaoyuandidai"
+            android:layout_below="@+id/id2"
+            android:layout_margin="@dimen/spacing"
+            android:layout_alignLeft="@+id/id2" />
+        <TextView
+            android:id="@+id/id4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/id3" />
+
+       <ImageView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:src="@mipmap/comments"
+           android:layout_toLeftOf="@+id/id4"
+           android:layout_below="@+id/id3"
+           android:layout_alignBottom="@+id/id4"
+           android:id="@+id/id6" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:id="@+id/id5"
+            android:layout_toLeftOf="@+id/id6"
+            android:layout_below="@+id/id3"
+            android:layout_alignBottom="@+id/id4"
+            android:layout_marginRight="@dimen/activity_horizontal_margin" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/praise"
+            android:layout_toLeftOf="@+id/id5"
+            android:layout_alignBottom="@+id/id5" />
+    </RelativeLayout>
+</LinearLayout>

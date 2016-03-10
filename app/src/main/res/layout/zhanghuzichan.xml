@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title"
+        android:background="@color/backColor"
+        >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/titleColor"
+            android:textSize="@dimen/titleText"
+            android:text="账户资产" />
+
+        <com.example.newbishengyuan.util.BackLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></com.example.newbishengyuan.util.BackLayout>
+
+        <!--<ImageView-->
+
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/back"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:src="@drawable/left"-->
+        <!--android:layout_marginLeft="16dp"-->
+        <!--android:clickable="true" />-->
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_margin="@dimen/spacing"
+        android:background="@color/buttonColor"
+        android:padding="@dimen/shidp">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/id1">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/zichanbackground"
+                android:padding="@dimen/spacing"
+
+                />
+            <TextView
+                android:id="@+id/balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="500元"
+                android:textSize="@dimen/text"
+                android:textColor="@color/buttonColor" />
+        </FrameLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="账号总资产"
+            android:layout_alignParentRight="false"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/shiba"
+            android:layout_marginTop="@dimen/shidp" />
+    </RelativeLayout>
+<include layout="@layout/cross_line_dark"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_vertical_margin"
+        android:background="@color/buttonColor">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="币升通"
+            android:layout_alignWithParentIfMissing="false"
+            android:textSize="@dimen/shiba" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bishengtong"
+            android:text="1000元"
+
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/shiba" />
+    </RelativeLayout>
+
+    <include layout="@layout/cross_line_dark"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_vertical_margin"
+        android:background="@color/buttonColor">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="学费宝"
+            android:layout_alignWithParentIfMissing="false"
+            android:textSize="@dimen/shiba" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/xuefeibao"
+            android:text="1000元"
+
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/shiba" />
+    </RelativeLayout>
+
+    <include layout="@layout/cross_line_dark"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_vertical_margin"
+        android:background="@color/buttonColor">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="助学宝"
+            android:layout_alignWithParentIfMissing="false"
+            android:textSize="@dimen/shiba" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/zhuxuebao"
+            android:text="1000元"
+
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/shiba" />
+    </RelativeLayout>
+</LinearLayout>

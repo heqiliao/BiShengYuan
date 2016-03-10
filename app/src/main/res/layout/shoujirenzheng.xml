@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/buttonColor">
+
+    <RelativeLayout
+        android:id="@+id/main_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title"
+        android:background="@color/backColor"
+        >
+
+        <com.example.newbishengyuan.util.BackLayout
+            android:layout_width="@dimen/title"
+            android:layout_height="wrap_content"></com.example.newbishengyuan.util.BackLayout>
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textColor="@color/titleColor"
+            android:textSize="@dimen/titleText"
+            android:text="手机认证"
+            android:layout_gravity="center"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentTop="false"
+            android:layout_centerInParent="true" />
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/title"
+    android:layout_marginTop="@dimen/ershidp">
+    android:layout_marginTop="@dimen/ershidp"
+
+    <EditText
+
+        android:id="@+id/shurushoujihap"
+        android:background="@drawable/input_background"
+        android:layout_width="250dp"
+        android:layout_height="@dimen/title"
+        android:hint="请输入手机号"
+
+        android:layout_marginLeft="@dimen/ershidp"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:textSize="@dimen/text1" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="发送"
+        android:layout_toRightOf="@+id/shurushoujihap"
+        android:background="@color/yellowText" />
+
+</RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title"
+
+        android:layout_marginTop="@dimen/ershidp">
+        <EditText
+
+            android:id="@+id/shuruduanxin"
+            android:background="@drawable/input_background"
+            android:layout_width="200dp"
+            android:layout_height="@dimen/title"
+            android:hint="请输入短信验证码"
+
+            android:layout_marginLeft="@dimen/ershidp"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:textSize="@dimen/text1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/ershidp"
+            android:src="@mipmap/wenhao"
+            android:layout_toRightOf="@+id/shuruduanxin"
+            android:id="@+id/wenhao" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="未受到验证码"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/badp"
+            android:layout_toRightOf="@+id/wenhao"
+            android:textColor="@color/yellowText" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title"
+
+        android:layout_marginTop="@dimen/ershidp">
+    <EditText
+
+        android:id="@+id/shuruyanzhengma"
+        android:background="@drawable/input_background"
+        android:layout_width="200dp"
+        android:layout_height="@dimen/title"
+        android:hint="请输入右边验证码"
+
+        android:layout_marginLeft="@dimen/ershidp"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:textSize="@dimen/text1" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/ershidp"
+        android:src="@mipmap/yanzhengma"
+        android:layout_toRightOf="@+id/shuruyanzhengma"
+        android:id="@+id/yanzhengma" />
+    </RelativeLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title"
+        android:background="@mipmap/lijitouzibig"
+        android:layout_margin="@dimen/ershidp"
+        android:text="立即提交"
+        android:textColor="@color/buttonColor"
+        android:id="@+id/lijitijiao" />
+
+</LinearLayout>

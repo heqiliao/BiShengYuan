@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/main_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title"
+        android:background="@color/backColor"
+        >
+
+        <com.example.newbishengyuan.util.BackLayout
+            android:layout_width="@dimen/title"
+            android:layout_height="wrap_content"></com.example.newbishengyuan.util.BackLayout>
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textSize="@dimen/titleText"
+            android:text="话题详情"
+            android:layout_gravity="center"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentTop="false"
+            android:layout_centerInParent="true" />
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_horizontal_margin">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/photo"
+            android:id="@+id/touxiang" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/touxiang"
+            android:layout_toRightOf="@+id/touxiang"
+            android:id="@+id/name"
+            android:text="小明"
+            android:layout_margin="@dimen/badp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1小时前"
+            android:id="@+id/date"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="在路上"
+            android:id="@+id/timu"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/text" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/xiaoyuandidai"
+            android:id="@+id/tupian"
+            android:layout_below="@+id/touxiang"
+            android:layout_margin="@dimen/badp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/content"
+            android:text="天气太热了"
+            android:layout_below="@+id/tupian"
+            android:layout_alignLeft="@+id/tupian" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/praiseAmount"
+            android:text="21"
+            android:layout_below="@+id/content"
+            android:layout_alignParentRight="true"
+            android:layout_alignRight="@+id/tupian" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/praise2"
+            android:layout_toLeftOf="@+id/praiseAmount"
+            android:layout_margin="@dimen/spacing"
+            android:layout_alignBottom="@+id/praiseAmount" />
+
+    </RelativeLayout>
+
+
+    <include layout="@layout/cross_line"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="全部评论"
+        android:layout_margin="@dimen/activity_horizontal_margin" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--<ListView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"></ListView>-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/spacing"
+            android:layout_alignParentBottom="false">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/photo1"
+                android:layout_centerVertical="true"
+                android:id="@+id/commentTouxiang"
+                android:layout_margin="@dimen/shidp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/louceng"
+                android:text="1F"
+                android:layout_alignParentBottom="false"
+                android:layout_below="@+id/commentTouxiang"
+                android:layout_alignLeft="@+id/commentTouxiang" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/commentDate"
+                android:text="5小时前"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/commentName"
+                android:text="小刚"
+                android:layout_toRightOf="@+id/commentTouxiang"
+                android:layout_alignTop="@+id/commentTouxiang" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/comment"
+                android:text="今天天气好热,实验室停电了"
+                android:layout_below="@+id/commentName"
+                android:layout_alignLeft="@+id/commentName"
+                android:layout_margin="@dimen/shidp" />
+        </RelativeLayout>
+        <include layout="@layout/cross_line"/>
+        <LinearLayout
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:background="@mipmap/gentie"
+                android:layout_gravity="center_vertical"
+                android:text="跟帖"
+                android:gravity="center" />
+            <EditText
+                android:id="@+id/editComment"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:background="@mipmap/commenbackground"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:background="@mipmap/gentie"
+                android:layout_gravity="center_vertical"
+                android:text="发送"
+                android:gravity="center" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+
+
+
+</LinearLayout>

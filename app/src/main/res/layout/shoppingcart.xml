@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/main_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title"
+        android:background="@color/backColor"
+        >
+
+        <com.example.newbishengyuan.util.BackLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></com.example.newbishengyuan.util.BackLayout>
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textColor="@color/titleColor"
+            android:textSize="@dimen/titleText"
+            android:text="购物车"
+            android:layout_gravity="center"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentTop="false"
+            android:layout_centerInParent="true" />
+
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ListView
+            android:id="@+id/cartList"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"></ListView>
+        <RelativeLayout
+            android:id="@+id/bottomBar"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/darker"
+            android:layout_alignParentBottom="true"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="总计:"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/title"
+                android:id="@+id/zongji"
+                android:textSize="@dimen/shiba"
+                android:textColor="@color/buttonColor" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:id="@+id/total"
+                android:layout_toRightOf="@+id/zongji"
+                android:layout_alignTop="@+id/zongji"
+                android:textSize="@dimen/shiba"
+                android:textColor="@color/buttonColor" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="元"
+
+                android:layout_toRightOf="@+id/total"
+                android:layout_alignTop="@+id/zongji"
+                android:textSize="@dimen/shiba"
+                android:textColor="@color/buttonColor" />
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="结算"
+                android:background="@color/buttonColor"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/yellowText"
+                android:textSize="@dimen/text"
+                android:id="@+id/jiesuan"
+                android:padding="@dimen/spacing" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+</LinearLayout>

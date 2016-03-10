@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="reportColor">#ff4040</color>
+    <color name="buttonColor">#ffffff</color>
+    <color name="backColor">#f0f0f0</color>
+    <color name="titleColor">#4f4f4f</color>
+    <color name="yellowText">#ffb180</color>
+    <color name="darker">#a3a3a3</color>
+    <color name="tixian">#dcdcdc</color>
+    <color name="yanzhengma">#efefef</color>
+    <color name="shouyiColor">#ffff6016</color>
+    <color name="zhichu">#ff2bff3b</color>
+    <color name="lanse">#ff5266ff</color>
+    <color name="primary">#2196F3</color>
+
+</resources>

@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/buttonColor">
+<LinearLayout
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/main_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title"
+        android:background="@color/backColor"
+
+        >
+<FrameLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_centerVertical="true"
+    android:padding="@dimen/shidp"
+    android:id="@+id/message">
+    <ImageView
+        android:layout_alignParentRight="true"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/message"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/red"
+        android:layout_above="@+id/message"
+        android:layout_alignRight="@+id/message"
+        android:layout_gravity="right" />
+
+</FrameLayout>
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/titleText"
+            android:text="@string/bishengyuan"
+            android:textColor="@color/titleColor" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        <!-- ViewPager是一个控件 -->
+        <android.support.v4.view.ViewPager
+            android:id="@+id/adv_pager"
+            android:layout_width="match_parent"
+            android:layout_height="160dp" >
+
+        </android.support.v4.view.ViewPager>
+        <LinearLayout
+            android:id="@+id/viewGroup"
+            android:layout_below="@id/adv_pager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-25dp"
+            android:gravity="right"
+            android:orientation="horizontal"
+            android:layout_marginRight="@dimen/ershidp">
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!--<ImageView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:src="@mipmap/adv1"/>-->
+
+    <LinearLayout
+        android:id="@+id/advertising"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/buttonColor">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/report"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+
+            android:layout_gravity="center_vertical" />
+
+        <TextView
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:id="@+id/reportText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="下面每个颜色中都有一个十六进制的数表示该颜色的值，如果你想使用某种颜色"
+            android:paddingRight="8dp"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/spacing"
+            android:layout_marginBottom="@dimen/spacing"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/titleColor" />
+    </LinearLayout>
+    <include layout="@layout/cross_line_dark"/>
+
+   <include layout="@layout/divide"/>
+    <LinearLayout
+        android:id="@+id/panel1"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/wodezijin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/myfinance"
+            android:text="我的资金"
+            android:background="@color/buttonColor"
+            android:textSize="@dimen/text1" />
+
+        <Button
+            android:id="@+id/shangmaosanbao"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/shangmaosanbao"
+            android:text="商贸三宝"
+            android:background="@color/buttonColor"
+            android:textSize="@dimen/text1" />
+
+        <Button
+            android:id="@+id/zhongbangshangcheng"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/zhongbangshangcheng"
+            android:text="众帮商城"
+            android:background="@color/buttonColor"
+            android:textSize="@dimen/text1" />
+
+        <Button
+            android:id="@+id/yue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/yue"
+            android:text="约吧"
+            android:background="@color/buttonColor"
+            android:textSize="@dimen/text1" />
+
+    </LinearLayout>
+
+    <include layout="@layout/divide"
+       />
+
+    <LinearLayout
+        android:id="@+id/panel2"
+        android:layout_below="@+id/divide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/tiaozaoshichang"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/tiaozaoshichang"
+            android:text="跳蚤市场"
+            android:background="@color/buttonColor"
+            android:textSize="@dimen/text1" />
+
+        <Button
+            android:id="@+id/courier"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/courier"
+            android:text="快递查询"
+            android:background="@color/buttonColor"
+            android:textSize="@dimen/text1" />
+
+        <Button
+            android:id="@+id/gongjiao"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/gongjiao"
+            android:text="智能公交"
+            android:background="@color/buttonColor"
+            android:textSize="@dimen/text1" />
+
+        <Button
+            android:id="@+id/wonderful"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/wonderful"
+            android:text="精彩活动"
+            android:background="@color/buttonColor"
+            android:textSize="@dimen/text1" />
+
+    </LinearLayout>
+
+    <include layout="@layout/divide"/>
+
+    <include layout="@layout/cross_line_dark"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/shidp"
+            android:background="@color/buttonColor">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:text="校园地带"
+
+                android:id="@+id/id1"
+                android:textColor="@color/titleColor"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:text="更多>>"
+
+                android:id="@+id/more"
+                android:textColor="@color/titleColor" />
+            <ImageView
+                android:id="@+id/photo"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/liangbai"
+                android:src="@mipmap/weifangchan"
+                android:layout_below="@+id/id1"
+                android:layout_margin="@dimen/spacing"
+                android:layout_centerInParent="true" />
+
+            <TextView
+                android:id="@+id/content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/date"
+                android:text="今天天气好热" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/date"
+                android:text="2015-07-27"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/photo"
+                android:layout_alignRight="@+id/photo" />
+
+
+        </RelativeLayout>
+    <include layout="@layout/cross_line_dark"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/buttonColor"></LinearLayout>
+
+
+
+
+</LinearLayout>
+
+    </ScrollView>

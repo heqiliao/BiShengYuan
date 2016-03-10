@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <TabWidget
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:id="@android:id/tabs"></TabWidget>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@android:id/tabcontent"
+            android:layout_above="@android:id/tabs">
+            <fragment
+            android:id="@+id/shouyeFragment"
+            android:name="com.example.newbishengyuan.activity.ShouyeFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+            <fragment
+                android:id="@+id/licaiFragment"
+                android:name="com.example.newbishengyuan.activity.LicaiFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <fragment
+                android:id="@+id/shangchengFragment"
+                android:name="com.example.newbishengyuan.activity.ShangChengFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <fragment
+                android:id="@+id/faxianFragment"
+                android:name="com.example.newbishengyuan.activity.FaxianFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            <fragment
+                android:id="@+id/wodeFragment"
+                android:name="com.example.newbishengyuan.activity.WoDeFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </FrameLayout>
+
+
+        </RelativeLayout>
+    </TabHost>

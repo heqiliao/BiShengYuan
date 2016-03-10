@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="@dimen/shidp"
+    android:background="@color/buttonColor">
+
+
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="false"
+        android:text="心型意大利面（100g）"
+        android:textSize="@dimen/text1"
+        android:textColor="@color/titleColor" />
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="@dimen/title"
+        android:layout_height="@dimen/title"
+        android:layout_below="@+id/name"
+        android:layout_margin="@dimen/spacing" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/shiba"
+        android:textColor="@color/yellowText"
+        android:text="￥"
+        android:id="@+id/id1"
+        android:layout_below="@+id/name"
+        android:layout_toRightOf="@+id/image"
+        android:layout_marginLeft="@dimen/spacing"
+        android:layout_marginTop="@dimen/spacing"
+        android:layout_marginBottom="@dimen/spacing" />
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/shiba"
+        android:textColor="@color/yellowText"
+        android:text="90"
+        android:layout_toRightOf="@+id/id1"
+        android:layout_alignBottom="@+id/id1"
+
+     />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="销量:"
+        android:layout_toRightOf="@+id/image"
+        android:layout_alignLeft="@+id/id1"
+        android:layout_below="@+id/id1"
+        android:id="@+id/xiaoliangTitle"
+        android:textColor="@color/titleColor" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/xiaoliangTitle"
+        android:layout_alignTop="@+id/xiaoliangTitle"
+        android:layout_marginLeft="@dimen/spacing"
+        android:text="12"
+        android:textColor="@color/titleColor"
+        android:id="@+id/xiaoliang" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/id2"
+        android:text="￥"
+
+        android:layout_toRightOf="@+id/price"
+        android:layout_alignBaseline="@+id/price"
+        android:textColor="@color/titleColor"
+        android:layout_marginLeft="@dimen/badp"
+        android:layout_marginTop="@dimen/badp"
+        android:layout_marginBottom="@dimen/badp" />
+
+    <TextView
+        android:id="@+id/price1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="90"
+
+
+        android:layout_toRightOf="@+id/id2"
+        android:layout_alignBaseline="@+id/id2"
+        android:textColor="@color/titleColor" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/decrease"
+        android:layout_alignLeft="@+id/price1"
+        android:id="@+id/decrease"
+        android:padding="@dimen/spacing"
+        android:layout_alignTop="@+id/xiaoliang" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/decrease"
+        android:text="0"
+
+        android:textColor="@color/titleColor"
+        android:id="@+id/amount"
+        android:layout_alignTop="@+id/increase"
+        android:padding="@dimen/spacing" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/increase"
+        android:layout_alignBottom="@+id/decrease"
+        android:id="@+id/increase"
+        android:layout_toRightOf="@+id/amount"
+        android:padding="@dimen/spacing" />
+
+</RelativeLayout>

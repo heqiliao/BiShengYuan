@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/buttonColor">
+    <RelativeLayout
+        android:id="@+id/main_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title"
+        android:background="@color/backColor"
+        >
+
+
+        <com.example.newbishengyuan.util.BackLayout
+            android:layout_width="@dimen/title"
+            android:layout_height="wrap_content"></com.example.newbishengyuan.util.BackLayout>
+
+
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textColor="@color/titleColor"
+            android:textSize="@dimen/titleText"
+            android:text="登录密码"
+            android:layout_gravity="center"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentTop="false"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请输入旧密码"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:textSize="@dimen/shiba" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title"
+        android:background="@drawable/input_background"
+        android:hint="请输入您的旧密码"
+        android:id="@+id/passwordBefore"
+        android:gravity="center"
+        android:textIsSelectable="false"
+        android:textSize="@dimen/text1"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请输入您的新密码"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:textSize="@dimen/shiba" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title"
+        android:background="@drawable/input_background"
+        android:hint="请输入您的新密码"
+        android:gravity="center"
+        android:id="@+id/password"
+        android:textSize="@dimen/text1"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请再次输入新密码"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:textSize="@dimen/shiba" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title"
+        android:background="@drawable/input_background"
+        android:hint="请再次输入新密码"
+        android:gravity="center"
+        android:id="@+id/passwordAgain"
+        android:textSize="@dimen/text1"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title"
+        android:background="@mipmap/lijitouzibig"
+        android:layout_margin="@dimen/ershidp"
+        android:text="确定"
+        android:textColor="@color/buttonColor"
+        android:id="@+id/queding" />
+</LinearLayout>

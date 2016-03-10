@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/main_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title"
+        android:background="@color/backColor"
+        >
+
+        <com.example.newbishengyuan.util.BackLayout
+            android:layout_width="@dimen/title"
+            android:layout_height="wrap_content"></com.example.newbishengyuan.util.BackLayout>
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textSize="@dimen/titleText"
+            android:text="发布"
+            android:layout_gravity="center"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentTop="false"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/buttonColor"
+        android:hint="话题"
+        android:padding="@dimen/activity_vertical_margin"
+        android:id="@+id/huati" />
+
+    <include layout="@layout/divide_dark"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/liangbai"
+        android:background="@color/buttonColor"
+        android:hint="内容"
+        android:padding="@dimen/activity_vertical_margin"
+        android:gravity="top"/>
+
+    <include layout="@layout/cross_line_dark"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/badp"
+        android:background="@color/buttonColor">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/fabutupian"
+            android:layout_margin="@dimen/badp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/fabutupian"
+            android:layout_margin="@dimen/badp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/tianjiatuxiang"
+            android:layout_margin="@dimen/badp"/>
+    </LinearLayout>
+    <include layout="@layout/cross_line_dark"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/badp"
+        android:background="@color/buttonColor">
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="话题类型"/>
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:prompt="@string/spin_prompt"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:entries="@array/yueArry"/>
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="确定提交"
+        android:background="@mipmap/lijitouzibig"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/confirm"
+        android:textColor="@color/buttonColor" />
+
+</LinearLayout>

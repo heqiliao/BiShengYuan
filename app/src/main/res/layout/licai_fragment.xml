@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/main_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title"
+        android:background="@color/backColor"
+
+        >
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/titleColor"
+        android:textSize="@dimen/titleText"
+        android:text="@string/licai" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="账单"
+            android:background="@mipmap/zhangdan"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:id="@+id/zhangdan"
+            android:textColor="@color/titleColor"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/shidp" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@mipmap/licaibackground">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:text="昨日收益（元）"
+            android:textSize="@dimen/titleText"
+            android:textColor="@color/titleColor"
+            android:id="@+id/textView2" />
+
+        <TextView
+            android:id="@+id/shouyi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.0000"
+            android:textColor="@color/shouyiColor"
+            android:textSize="80dp"
+            android:layout_below="@+id/textView2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="34dp" />
+
+
+     <TextView
+         android:id="@+id/id1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="币生通总金额"
+         android:textSize="@dimen/text"
+         android:textColor="@color/titleColor"
+         android:layout_below="@+id/shouyi"
+         android:layout_centerHorizontal="true" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.0000"
+            android:textSize="@dimen/titleText"
+            android:textColor="@color/titleColor"
+            android:id="@+id/jine"
+            android:layout_below="@+id/id1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="38dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="元"
+            android:textSize="@dimen/titleText"
+            android:textColor="@color/titleColor"
+
+
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="38dp"
+            android:layout_toRightOf="@+id/jine"
+            android:layout_alignBaseline="@+id/jine" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/shidp"
+        android:background="@color/buttonColor">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/xuefeibao"
+            android:background="@drawable/content_bg"
+            android:layout_marginRight="@dimen/badp"
+            android:padding="@dimen/activity_horizontal_margin">
+         <ImageView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:src="@mipmap/xuefeibao"
+             android:layout_centerInParent="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/xuefeibao"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:textSize="@dimen/titleText"
+                android:textColor="@color/titleColor" />
+          </RelativeLayout>
+        <include
+            layout="@layout/vertical_line"/>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/zhuxuebao"
+            android:layout_marginLeft="@dimen/badp"
+            android:background="@drawable/content_bg"
+            android:padding="@dimen/activity_horizontal_margin">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/zhuxuebao"
+                android:layout_centerInParent="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/zhuxuebao"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:textSize="@dimen/titleText"
+                android:textColor="@color/titleColor" />
+        </RelativeLayout>
+</LinearLayout>
+</LinearLayout>

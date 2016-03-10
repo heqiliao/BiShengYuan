@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="spin_prompt">请选择话题类型</string>
+    <string-array name="huatiArry">
+        <item>约吧</item>
+        <item>跳蚤市场</item>
+        <item>精彩活动</item>
+    </string-array>
+
+    <string-array name="yueArry">
+        <item>约吧</item>
+
+    </string-array>
+
+    <string-array name="tiaoArry">
+
+        <item>跳蚤市场</item>
+
+    </string-array>
+
+    <string-array name="wonderfulArry">
+
+        <item>精彩活动</item>
+    </string-array>
+
+
+
+    <string-array name="xuefeibaoArry">
+        <item>4000</item>
+        <item>6000</item>
+        <item>8000</item>
+    </string-array >
+</resources>

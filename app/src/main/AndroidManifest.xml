@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.newbishengyuan" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/gouwu"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:name=".util.MyApplication">
+
+        <activity android:name=".activity.SumActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--<activity android:name=".activity.SumActivity"-->
+            <!--android:screenOrientation="portrait"/>-->
+        <activity android:name=".activity.LoginActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.RegisterActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.MyAccountActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.ZhangHuAnQuanActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.ShouJiRenZhengActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.ShiMingRenZhengActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.DengLuMiMaActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.SettingActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.MyMessageActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.AboutUsActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.WoDeLiCaiActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.ZhangHuZiChanActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.XiaoFeiJiLuActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.TiXianActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.TouZiShouYiActivity"
+        android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.ChongZhiActivity"
+        android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.WoYaoTiXianActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.ZhangDanActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.XueFeiBaoActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.XfbShuoMingActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.XfbOneYearActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.XfbTwoYearActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.XfbThreeYearActivity"
+            android:screenOrientation="portrait"/>
+
+
+        <activity android:name=".activity.ZhuXueBaoActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.ZxbShuoMingActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.ZxbOneActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.ZxbTwoActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.ZxbThreeActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.CourierActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.SchoolAreaActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.ForgetPasswordActivity"
+        android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.YueActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.EditActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.TiaoZaoActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.WonderfulActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.HuaTiXiangQingActivity"
+        android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.ZhiFuRenZhengActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.WoDeDingDanActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.NiChengActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.YuanXiActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.AddressActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.SexActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.EditYueActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.EditTiaoActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.EditWonderfulActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.BarActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.CartActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.JiaoYiActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.PayActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.SystemLetterActivity"
+        android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.GongJiaoActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.PayShopActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.ZiXunXiangQingActivity"
+            android:screenOrientation="portrait"/>
+
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+</manifest>

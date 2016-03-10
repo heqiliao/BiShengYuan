@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/shidp">
+        <TextView
+            android:id="@id/id1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="订单号"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="待收货"
+            android:textColor="@color/yellowText"
+            android:layout_alignParentRight="true" />
+
+
+        <ImageView
+            android:id="@+id/tuxiang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/photo"
+            android:layout_below="@id/id1"
+            android:layout_margin="@dimen/activity_horizontal_margin" />
+
+        <TextView
+            android:text="名称:珍珠茶"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mingcheng"
+            android:layout_toRightOf="@+id/tuxiang"
+            android:layout_alignTop="@+id/tuxiang" />
+        <TextView
+            android:text="下单时间:2015-07-28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/xiadan"
+            android:layout_below="@+id/mingcheng"
+            android:layout_alignLeft="@+id/mingcheng" />
+        <TextView
+            android:text="发货时间:2015-07-28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/xiadan"
+            android:layout_alignLeft="@+id/xiadan"
+            android:id="@+id/fahuo" />
+        <TextView
+            android:text="收货地址:光谷广场"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dizhi1"
+            android:layout_below="@+id/fahuo" />
+        <TextView
+            android:text="发货地址:光谷天地"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dizhi2"
+            android:layout_below="@+id/dizhi1"
+            android:layout_alignLeft="@+id/dizhi1" />
+        <TextView
+            android:text="199元"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignBaseline="@+id/dizhi2"
+            android:textSize="@dimen/titleText"
+            android:textColor="@color/yellowText" />
+    </RelativeLayout>
+
+</LinearLayout>
